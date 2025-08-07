@@ -134,10 +134,10 @@ public class StudentController : Controller
         return View("Subjects/DesignSurveyingPlanning");
     }
 
-    [Route("/students/subjects/digital-business-services", Name = "DigitalBusinessServices")]
-    public IActionResult DigitalBusinessServices()
+    [Route("/students/subjects/digital-data-analytics", Name = "DigitalDataAnalytics")]
+    public IActionResult DigitalDataAnalytics()
     {
-        return View("Subjects/DigitalBusinessServices");
+        return View("Subjects/DigitalDataAnalytics");
     }
 
     [Route("/students/subjects/digital-production-design-development", Name = "DigitalProductionDesignDevelopment")]
