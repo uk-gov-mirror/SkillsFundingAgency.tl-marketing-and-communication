@@ -146,10 +146,10 @@ public class StudentController : Controller
         return View("Subjects/DigitalSoftwareDevelopment");
     }
 
-    [Route("/students/subjects/digital-support-services", Name = "DigitalSupportServices")]
-    public IActionResult DigitalSupportServices()
+    [Route("/students/subjects/digital-support-security", Name = "DigitalSupportAndSecurity")]
+    public IActionResult DigitalSupportAndSecurity()
     {
-        return View("Subjects/DigitalSupportServices");
+        return View("Subjects/DigitalSupportAndSecurity");
     }
 
     [Route("/students/subjects/education", Name = "Education")]
