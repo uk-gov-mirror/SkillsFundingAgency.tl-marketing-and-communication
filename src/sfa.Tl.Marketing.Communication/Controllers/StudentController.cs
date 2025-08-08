@@ -134,22 +134,22 @@ public class StudentController : Controller
         return View("Subjects/DesignSurveyingPlanning");
     }
 
-    [Route("/students/subjects/digital-business-services", Name = "DigitalBusinessServices")]
-    public IActionResult DigitalBusinessServices()
+    [Route("/students/subjects/digital-data-analytics", Name = "DigitalDataAnalytics")]
+    public IActionResult DigitalDataAnalytics()
     {
-        return View("Subjects/DigitalBusinessServices");
+        return View("Subjects/DigitalDataAnalytics");
     }
 
-    [Route("/students/subjects/digital-production-design-development", Name = "DigitalProductionDesignDevelopment")]
-    public IActionResult DigitalProductionDesignDevelopment()
+    [Route("/students/subjects/digital-software-development", Name = "DigitalSoftwareDevelopment")]
+    public IActionResult DigitalSoftwareDevelopment()
     {
-        return View("Subjects/DigitalProductionDesignDevelopment");
+        return View("Subjects/DigitalSoftwareDevelopment");
     }
 
-    [Route("/students/subjects/digital-support-services", Name = "DigitalSupportServices")]
-    public IActionResult DigitalSupportServices()
+    [Route("/students/subjects/digital-support-security", Name = "DigitalSupportSecurity")]
+    public IActionResult DigitalSupportSecurity()
     {
-        return View("Subjects/DigitalSupportServices");
+        return View("Subjects/DigitalSupportSecurity");
     }
 
     [Route("/students/subjects/education", Name = "Education")]
