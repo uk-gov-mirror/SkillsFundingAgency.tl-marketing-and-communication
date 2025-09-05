@@ -4,13 +4,14 @@ jobs:
         name: 'Azure Pipelines'
         vmImage: 'windows-latest'
     dependsOn: 
-    - PublishSite
-    - PublishFunction
+    #- PublishSite
+    #- PublishFunction
     steps:
       - task: GitHubRelease@1
         displayName: 'GitHub release (create)'
-        condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master') , eq(variables['System.JobAttempt'], '1'), eq(variables['environmentName'], 'prd'))
+        #condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master') , eq(variables['System.JobAttempt'], '1'), eq(variables['environmentName'], 'prd'))
         inputs:
-          gitHubConnection: SkillsFundingAgency
-          tagSource: userSpecifiedTag
-          tag: '$(Build.BuildNumber)'
+          gitHubConnection: SkillsFundingAgency    
+          repositoryName: '$(Build.Repository.Name)'
+          tagSource: 'userSpecifiedTag'
+          tag: $(build.buildNumber)

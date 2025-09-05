@@ -44,6 +44,7 @@ jobs:
       displayName: Update GitVersion
       inputs:
         updateAssemblyInfo: true
+        writeToPipeline: true
 
     - task: Cache@2
       displayName: Cache
